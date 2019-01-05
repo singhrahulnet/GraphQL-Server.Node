@@ -17,4 +17,5 @@ type User {
   username: String!
   email: String!
   website: String
+  posts: [Post]!
 }

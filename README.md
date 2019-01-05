@@ -30,7 +30,7 @@ Node.js code to create GraphQL server on top of public REST API - https://jsonpl
 
 > Refer to the following screenshots to fire your **custom** queries and get the results from the server
 
-#### Check the schema by using 'Schema' tab on the right side of the screen
+#### Check the schema by using 'Schema' tab on the right side of the screen. Notice the circular reference of 'Post' in 'User' type.
 
 <img alt="Schema Information" src="https://github.com/singhrahulnet/GraphQL-Server.Node/blob/master/refImg/schema.PNG">
 
@@ -43,6 +43,9 @@ Node.js code to create GraphQL server on top of public REST API - https://jsonpl
 
 <img alt="Post by Id" src="https://github.com/singhrahulnet/GraphQL-Server.Node/blob/master/refImg/postById.PNG">
 
+#### Query 'Post->User->Posts'.
+
+<img alt="Post by Id" src="https://github.com/singhrahulnet/GraphQL-Server.Node/blob/master/refImg/circular.PNG">
 
 
 ## Support or Contact

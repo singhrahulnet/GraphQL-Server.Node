@@ -17,7 +17,15 @@ const resolvers = {
             const res = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
             return res.json();
         }
+    },
+    User: {
+        posts: async parent => {
+            const userId = parent.userId
+            const res = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`);
+            return res.json();
+        }
     }
+
 }
 
 module.exports.Resolvers = resolvers;
